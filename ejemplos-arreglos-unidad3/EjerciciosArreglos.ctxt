@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=EjerciciosArreglos
+comment1.params=
+comment1.target=int[]\ procesarEntrada()
+comment2.params=arreglo
+comment2.target=boolean\ esPalindrome(int[])
+comment3.params=arreglo
+comment3.target=void\ mostrarArreglo(int[])
+comment4.params=args
+comment4.target=void\ main(java.lang.String[])
+numComments=5
