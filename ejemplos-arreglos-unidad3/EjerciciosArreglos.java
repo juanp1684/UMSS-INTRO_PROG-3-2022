@@ -36,6 +36,7 @@ public class EjerciciosArreglos {
     public void mostrarArreglo(int[] arreglo) {
         int n = arreglo.length;
         
+        System.out.println();
         System.out.println("Los elementos del arreglo son:");
         
         /*for (int i = 0; i < n; i++) {
@@ -47,19 +48,67 @@ public class EjerciciosArreglos {
         }
     }
     
+    public void bubblesort(int[] arreglo) {
+        int n = arreglo.length;
+        
+        for (int c = 1; c <= n; c++) {
+            for (int i = 0; i <= n - 2; i++) {
+                if (arreglo[i] > arreglo[i + 1]) {
+                    int aux = arreglo[i];
+                    arreglo[i] = arreglo[i + 1];
+                    arreglo[i + 1] = aux;
+                }
+            }
+        }
+    }
+    
+    public int[] fibonacci(int n) {
+        int[] arreglo = new int[n];
+        arreglo[0] = 0;
+        arreglo[1] = 1;
+        
+        for (int i = 2; i < n; i++) {
+            arreglo[i] = arreglo[i - 2] + arreglo[i - 1];
+        }
+        
+        return arreglo;
+    }
+    
+    public void rotar(int[] arreglo, int nrot) {
+        int n = arreglo.length;
+        for (int c = 1; c <= nrot; c++) {
+            int ultimo = arreglo[n - 1];
+            
+            for (int i = n - 1; i >= 1; i--) {
+                arreglo[i] = arreglo[i - 1];
+            }
+            
+            arreglo[0] = ultimo;
+            
+            mostrarArreglo(arreglo);
+        }
+    }
+    
     public static void main(String[] args) {
         EjerciciosArreglos ejercicios = new EjerciciosArreglos();
-        int [] arreglo = ejercicios.procesarEntrada();
+        /*int [] arreglo = ejercicios.procesarEntrada();
         ejercicios.mostrarArreglo(arreglo);
         boolean palindrome = ejercicios.esPalindrome(arreglo);
-        
-        // EJERCICIO: Crear un metodo "mostrarArreglo" para visualizar
-        // en pantalla los elementos de un arreglo enviado como parametro
         
         if (palindrome) {
             System.out.println("Es palindrome");
         } else {
             System.out.println("No es palindrome");
-        }
+        }*/
+        
+        //int[] arregloFibonacci = ejercicios.fibonacci(10);
+        //ejercicios.mostrarArreglo(arregloFibonacci);
+        
+        //int[] arregloRotacion = ejercicios.procesarEntrada();
+        //ejercicios.rotar(arregloRotacion, 2);
+        
+        int[] arreglo = ejercicios.procesarEntrada();
+        ejercicios.bubblesort(arreglo);
+        ejercicios.mostrarArreglo(arreglo);
     }
 }
