@@ -71,14 +71,54 @@ public class EjerciciosBasicos {
         return resultado;
     }
     
+    public int[][] generarMatrizFibonacci(int n) {
+        int[][] matriz = new int[n][n];
+        int a = 0, b = 1, c;
+        
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n; j++) {
+                matriz[i][j] = a;
+                c = a + b;
+                a = b;
+                b = c;
+            }
+        }
+        
+        return matriz;
+    }
+    
+    public void rotar(int[][] matriz) {
+        // Transponer
+        int m = 3, n = 3;
+        for (int i = 0; i < m; i++) {
+            for (int j = i; j < n; j++) {
+                int aux = matriz[i][j];
+                matriz[i][j] = matriz[j][i];
+                matriz[j][i] = aux;
+            }
+        }
+        
+        //Intercambiar la primera y ultima columna
+        for (int i = 0; i < m; i++) {
+            int aux = matriz[i][0];
+            matriz[i][0] = matriz[i][n - 1];
+            matriz[i][n - 1] = aux;
+        }
+    }
+    
     public static void main(String[] args) {
         EjerciciosBasicos ejercicios = new EjerciciosBasicos();
-        int [][] matriz = ejercicios.ingresarMatriz(3, 4);
+        /*int [][] matriz = ejercicios.ingresarMatriz(3, 4);
         int [][] transpuesta = ejercicios.transpuesta(matriz);
         ejercicios.visualizarMatriz(transpuesta);
         /*int[][] matriz1 = ejercicios.ingresarMatriz(3, 4);
         int[][] matriz2 = ejercicios.ingresarMatriz(3, 4);
         int[][] resultado = ejercicios.sumar(matriz1, matriz2);
-        ejercicios.visualizarMatriz(resultado);*/
+        ejercicios.visualizarMatriz(resultado);
+        int[][] matrizFibonacci = ejercicios.generarMatrizFibonacci(3);
+        ejercicios.visualizarMatriz(matrizFibonacci);*/
+        int[][] matriz = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
+        ejercicios.rotar(matriz);
+        ejercicios.visualizarMatriz(matriz);
     }
 }
