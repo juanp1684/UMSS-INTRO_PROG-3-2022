@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=EjerciciosBasicos
+comment1.params=m\ n
+comment1.target=int[][]\ ingresarMatriz(int,\ int)
+comment2.params=matriz
+comment2.target=int[][]\ transpuesta(int[][])
+comment3.params=matriz
+comment3.target=void\ visualizarMatriz(int[][])
+comment4.params=matriz1\ matriz2
+comment4.target=int[][]\ sumar(int[][],\ int[][])
+comment5.params=args
+comment5.target=void\ main(java.lang.String[])
+numComments=6

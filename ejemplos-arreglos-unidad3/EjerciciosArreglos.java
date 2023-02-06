@@ -89,6 +89,25 @@ public class EjerciciosArreglos {
         }
     }
     
+    public int[] cribaEratostenes(int n) {
+        int[] arreglo = new int[n - 1];
+        
+        for (int c = 2; c <= n; c++) {
+            arreglo[c - 2] = c;
+        }
+        
+        int p = 2;
+        
+        while (p * p <= n) {
+            for (int i = p * 2; i <= n; i += p) {
+                arreglo[i - 2] = 0;
+            }
+            p++;
+        }
+        
+        return arreglo;
+    }
+    
     public static void main(String[] args) {
         EjerciciosArreglos ejercicios = new EjerciciosArreglos();
         /*int [] arreglo = ejercicios.procesarEntrada();
@@ -107,8 +126,9 @@ public class EjerciciosArreglos {
         //int[] arregloRotacion = ejercicios.procesarEntrada();
         //ejercicios.rotar(arregloRotacion, 2);
         
-        int[] arreglo = ejercicios.procesarEntrada();
-        ejercicios.bubblesort(arreglo);
+        //int[] arreglo = ejercicios.procesarEntrada();
+        //ejercicios.bubblesort(arreglo);
+        int[] arreglo = ejercicios.cribaEratostenes(13);
         ejercicios.mostrarArreglo(arreglo);
     }
 }
