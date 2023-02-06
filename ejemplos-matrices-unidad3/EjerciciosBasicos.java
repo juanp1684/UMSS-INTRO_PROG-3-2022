@@ -54,6 +54,23 @@ public class EjerciciosBasicos {
         return suma;
     }
     
+    public int[][] multiplicar(int[][] matriz1, int[][] matriz2) {
+        int m = matriz1.length; // Nro de filas de la primera matriz
+        int n = matriz2[0].length; // Nro de columnas de la segunda matriz
+        int p = matriz1[0].length; // Nro de columnas de la primera matriz
+        int[][] resultado = new int[m][n]; // Definir el resultado
+        
+        for (int i = 0; i < m; i++) { // Itera las filas del resultado
+            for (int j = 0; j < n; j++) { // Itera las columnas del resultado
+                for (int k = 0; k < p; k++) { // Visita los elementos que se deben multiplicar
+                    resultado[i][j] += matriz1[i][k] * matriz2[k][j];
+                }
+            }
+        }
+        
+        return resultado;
+    }
+    
     public static void main(String[] args) {
         EjerciciosBasicos ejercicios = new EjerciciosBasicos();
         int [][] matriz = ejercicios.ingresarMatriz(3, 4);
