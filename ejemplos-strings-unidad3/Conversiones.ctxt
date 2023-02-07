@@ -1,5 +1,9 @@
 #BlueJ class context
 comment0.target=Conversiones
-comment1.params=args
-comment1.target=void\ main(java.lang.String[])
-numComments=2
+comment1.params=
+comment1.target=void\ hola()
+comment2.params=
+comment2.target=void\ hallo()
+comment3.params=args
+comment3.target=void\ main(java.lang.String[])
+numComments=4
