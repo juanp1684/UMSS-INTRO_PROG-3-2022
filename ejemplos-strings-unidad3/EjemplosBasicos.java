@@ -1,6 +1,27 @@
 public class EjemplosBasicos
 {
     public static void main(String[] args) {
+        String holaCochabamba = "HOLA COCHABAMBA";
+        String porcion = holaCochabamba.substring(1, 4);
+        System.out.println(porcion);
+        
+        // Split
+        
+        String[] arregloPalabras = holaCochabamba.split(" ");
+        
+        for (String palabra : arregloPalabras) {
+            System.out.println(palabra);
+        }
+        
+        String frase = "hoy esta muy lluvioso";
+        String[] arregloFrase = frase.split(" ");
+        
+        System.out.println("Las palabras son");
+        
+        for (String palabra : arregloFrase) {
+            System.out.println(palabra);
+        }
+        
         StringBuilder sb = new StringBuilder();
         sb.append("Hola");
         sb.append(" ");
@@ -46,13 +67,8 @@ public class EjemplosBasicos
             int valor = caracter;
             System.out.println(valor);
         }
+        
     }
-    
-    
-    
-    
-    
-    
     
     
 }
