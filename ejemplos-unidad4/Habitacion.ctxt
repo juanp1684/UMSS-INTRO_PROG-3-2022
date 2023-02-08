@@ -1,0 +1,5 @@
+#BlueJ class context
+comment0.target=Habitacion
+comment1.params=area\ numero
+comment1.target=Habitacion(int,\ java.lang.String)
+numComments=2

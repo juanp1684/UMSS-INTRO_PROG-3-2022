@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=EjemploMiembros
+comment1.params=a\ b
+comment1.target=int\ sumar(int,\ int)
+comment2.params=a\ b\ c
+comment2.target=int\ sumar(int,\ int,\ int)
+comment3.params=a\ b\ c\ d
+comment3.target=int\ sumar(int,\ int,\ int,\ int)
+comment4.params=a\ b
+comment4.target=int\ restar(int,\ int)
+comment5.params=primerValor\ otrosValores
+comment5.target=int\ sumarValores(int,\ int[])
+comment6.params=estudiante1\ otrosEstudiantes
+comment6.target=void\ mostrarNombresDeEstudiantes(java.lang.String,\ java.lang.String[])
+numComments=7

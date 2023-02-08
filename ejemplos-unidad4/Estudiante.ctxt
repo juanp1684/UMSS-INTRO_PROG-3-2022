@@ -1,7 +1,7 @@
 #BlueJ class context
 comment0.target=Estudiante
-comment1.params=ci\ nombre\ apellido\ edad\ semestre\ codigoSis
-comment1.target=Estudiante(java.lang.String,\ java.lang.String,\ java.lang.String,\ int,\ int,\ int)
+comment1.params=ci\ nombre\ apellido\ edad\ semestre\ codigoSis\ materias
+comment1.target=Estudiante(java.lang.String,\ java.lang.String,\ java.lang.String,\ int,\ int,\ int,\ java.util.ArrayList)
 comment2.params=
 comment2.target=void\ inscribirse()
 comment3.params=
