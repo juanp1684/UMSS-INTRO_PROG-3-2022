@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=Facultad
+comment1.params=nombre\ anioFundacion
+comment1.target=Facultad(java.lang.String,\ java.lang.Integer)
+comment2.params=
+comment2.target=java.lang.String\ toString()
+numComments=3

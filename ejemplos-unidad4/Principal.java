@@ -43,7 +43,12 @@ public class Principal {
        materias.add(new Materia("SIS-101", "PROGRAMACION 2", "700"));
        materias.add(new Materia("SIS-102", "PROGRAMACION 3", "800"));
        
-       Estudiante jorge = new Estudiante("123", "Jorge", "Lopez", 19, 5, 2001010, materias);
+       Facultad humanidades = new Facultad("Humanidades", 1970);
+       
+       Estudiante jorge = new Estudiante("123", "Jorge", "Lopez", 19, 5, 2001010, 
+                                         materias, humanidades);
+                                         
+        System.out.println(humanidades);
        jorge.mostrarDatos();
     }
     
