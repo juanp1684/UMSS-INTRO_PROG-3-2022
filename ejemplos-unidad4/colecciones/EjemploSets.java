@@ -31,13 +31,4 @@ public class EjemploSets {
         }
     }
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
 }

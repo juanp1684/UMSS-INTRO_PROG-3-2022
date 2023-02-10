@@ -14,6 +14,8 @@ public class EjemploListas {
         System.out.println("El primero es " + listaElementos.get(0));
         System.out.println("El tercero es " + listaElementos.get(2)); 
         
+        listaElementos.remove(10); // Quitar elementos de la coleccion
+        
         System.out.println("Los elementos son");
         
         for (Object elemento : listaElementos) {

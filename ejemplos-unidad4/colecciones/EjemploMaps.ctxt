@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=EjemploMaps
+comment1.params=palabra1\ palabra2
+comment1.target=boolean\ esAnagrama(java.lang.String,\ java.lang.String)
+comment2.params=palabra
+comment2.target=java.util.Hashtable\ contarLetras(java.lang.String)
+comment3.params=args
+comment3.target=void\ main(java.lang.String[])
+numComments=4
