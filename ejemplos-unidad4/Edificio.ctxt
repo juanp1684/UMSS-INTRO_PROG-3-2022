@@ -1,5 +1,0 @@
-#BlueJ class context
-comment0.target=Edificio
-comment1.params=nombre\ direccion\ numeroPisos
-comment1.target=Edificio(java.lang.String,\ java.lang.String,\ int)
-numComments=2
