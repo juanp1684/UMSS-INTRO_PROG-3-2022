@@ -6,10 +6,13 @@ public class EjercicioSwitchCase {
         switch (literal) {
             default:
                 System.out.println("Otro dia");
+                break;
             case "lunes":
                 System.out.println(1);
+                break;
             case "martes":
                 System.out.println(2);
+                break;
             case "miercoles":
                 System.out.println(3);
                 break;
